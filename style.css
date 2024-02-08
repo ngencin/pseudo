@@ -1,0 +1,137 @@
+body {
+    margin: 0;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 50px;
+    align-items: center;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    gap: 15px;
+}
+
+ul a{
+    display: flex;
+    justify-content: right;
+    color: #f5bc03;
+    font-size: 1.5em;
+    text-decoration: none;
+}
+
+nav a > img {
+    width: 200px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    background: radial-gradient(circle,rgba(2,2,173,.2707676820728291) 0,rgba(253,29,29,.5116640406162465) 50%,rgba(255,233,51,.2259497549019608) 100%);
+    padding: 150px;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+section h1{
+    font-family: 'Abril Fatface', serif;
+    text-transform: lowercase;
+    font-size: 25px;
+}
+
+button{
+    border-radius: 30px;
+    padding: 15px;
+    background: #f5bc03;
+    border: none;
+}
+
+button:hover{
+    background-color: #b3001c;
+}
+
+section h2{
+   font-family: 'Playfair Display', serif;
+    font-size: 15px;
+    text-transform: uppercase;
+    text-decoration: dotted;
+}
+
+#pseudo{
+     font-family: 'Abril Fatface', serif;
+    font-size: 18px;
+}
+footer {
+    display: flex;
+    justify-content: center;
+    border-top: 0.5px black solid;
+    margin-top: 60px;
+    padding: 20px;
+}
+
+.footer-css{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.footer-css img{
+    width: 150px;
+}
+
+.footer-css p{
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 12px;
+
+}
+
+.footer-css a{
+    display: flex;
+    justify-content: center;
+}
+
+/*media queries*/
+
+@media screen and (max-width: 700px){
+    nav{
+        flex-direction: column;
+    }
+
+   main{
+     padding: 50px;   
+    }
+
+    section h1{
+        font-size: 13px;
+    }
+
+    section h2{
+        font-size: 13px;
+    }
+
+    button{
+        border-radius: 30px;
+        padding: 10px;
+        background: #f5bc03;
+        border: none;
+    }
+
+    #pseudo{
+        font-family: 'Abril Fatface', serif;
+       font-size: 15px;
+   }
+}
+    
